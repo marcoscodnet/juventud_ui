@@ -1,0 +1,20 @@
+<rasty specificationClass="Juventud\UI\components\filter\montoCuota\MontoCuotaFilter" templateLocation="MontoCuotaFilter.htm">
+
+	<component id="nro" type="InputText">
+		<param name="name" value="str:nro" />
+		<param name="value" value="criteria.nro" />
+		<param name="placeholder" value="msg:montoCuota.nro" />
+	</component>
+	
+	<component id="year" type="InputFindEntity">
+		<param name="inputId" value="str:year" />
+		<param name="name" value="str:year" />
+		<param name="value" value="year.montoCuota" />
+		<param name="placeholder" value="msg:montoCuota.year" />
+		<param name="finder" value="yearFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:YearFilter" />
+		
+	</component>
+	
+</rasty>

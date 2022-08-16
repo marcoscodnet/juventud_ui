@@ -1,0 +1,13 @@
+<rasty specificationClass="Juventud\UI\pages\cuotaSocios\CuotaSocios" templateLocation="pages/cuotaSocios/CuotaSocios.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+
+	<component id="cuotaSociosFilter" type="CuotaSocioFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:cuotaSocio.buscar" />
+		<param name="legendAgain" value="msg:cuotaSocio.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

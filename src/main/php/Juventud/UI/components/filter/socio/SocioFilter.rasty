@@ -1,0 +1,36 @@
+<rasty specificationClass="Juventud\UI\components\filter\socio\SocioFilter" templateLocation="SocioFilter.htm">
+
+	<component id="nombre" type="InputText">
+		<param name="name" value="str:nombre" />
+		<param name="value" value="criteria.nombre" />
+		<param name="placeholder" value="msg:socio.nombre" />
+	</component>
+	<component id="apellido" type="InputText">
+		<param name="name" value="str:apellido" />
+		<param name="value" value="criteria.apellido" />
+		<param name="placeholder" value="msg:socio.apellido" />
+	</component>
+	<component id="dni" type="InputText">
+		<param name="name" value="str:dni" />
+		<param name="value" value="criteria.dni" />
+		<param name="placeholder" value="msg:socio.dni" />
+	</component>
+	<component id="email" type="InputText">
+		<param name="name" value="str:email" />
+		<param name="value" value="criteria.email" />
+		<param name="placeholder" value="msg:socio.email" />
+	</component>
+	
+	
+	
+	<component id="tipoSocio" type="InputCombo">
+		<param name="inputId" value="str:tipoSocio" />
+		<param name="name" value="str:tipoSocio" />
+		<param name="value" value="criteria.tipoSocio" />
+		<param name="options" value="tipoSocios" />
+		<param name="finder" value="tipoSocioFinderClazz" />
+		<param name="placeholder" value="msg:socio.tipoSocio" />
+		<param name="emptyOptionLabel" value="msg:combo.empty" />
+	</component>
+	
+</rasty>

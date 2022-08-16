@@ -1,0 +1,14 @@
+<rasty specificationClass="Juventud\UI\pages\years\agregar\YearAgregar" templateLocation="pages/years/agregar/YearAgregar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+
+	<component id="yearForm" type="YearForm">
+		<param name="legend" value="msg:year.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarYear" />
+		<param name="method" value="str:post" />
+		<param name="year" value="year" />
+	</component>
+	
+</rasty>

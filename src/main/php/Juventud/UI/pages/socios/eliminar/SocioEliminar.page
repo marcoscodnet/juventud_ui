@@ -1,0 +1,14 @@
+<rasty specificationClass="Juventud\UI\pages\socios\eliminar\SocioEliminar" templateLocation="pages/socios/eliminar/SocioEliminar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+	<param name="socioOid" value="get:oid" />
+	<param name="error" value="get:error" />
+
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="socio.oid" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,13 @@
+<rasty specificationClass="Juventud\UI\pages\tipoSocios\TipoSocios" templateLocation="pages/tipoSocios/TipoSocios.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+
+	<component id="tipoSociosFilter" type="TipoSocioFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:tipoSocio.buscar" />
+		<param name="legendAgain" value="msg:tipoSocio.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

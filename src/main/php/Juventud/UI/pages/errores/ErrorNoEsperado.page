@@ -1,0 +1,6 @@
+<rasty specificationClass="Juventud\UI\pages\errores\ErrorNoEsperado" templateLocation="pages/errores/ErrorNoEsperado.htm">
+
+	<param name="layoutType" value="str:JuventudErrorLayout" />
+	<param name="mensaje" value="get:error" />
+
+</rasty>

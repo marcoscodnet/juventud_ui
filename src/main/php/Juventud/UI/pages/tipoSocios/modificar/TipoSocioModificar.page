@@ -1,0 +1,16 @@
+<rasty specificationClass="Juventud\UI\pages\tipoSocios\modificar\TipoSocioModificar" templateLocation="pages/tipoSocios/modificar/TipoSocioModificar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+	<param name="tipoSocioOid" value="get:oid" />
+
+
+	<component id="tipoSocioForm" type="TipoSocioForm">
+		<param name="legend" value="msg:tipoSocio.modificar.legend" />
+		<param name="action" value="linkActionModificarTipoSocio" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="tipoSocio" value="tipoSocio" />
+	</component>
+	
+</rasty>

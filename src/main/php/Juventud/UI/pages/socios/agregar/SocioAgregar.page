@@ -1,0 +1,14 @@
+<rasty specificationClass="Juventud\UI\pages\socios\agregar\SocioAgregar" templateLocation="pages/socios/agregar/SocioAgregar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+
+	<component id="socioForm" type="SocioForm">
+		<param name="legend" value="msg:socio.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarSocio" />
+		<param name="method" value="str:post" />
+		<param name="socio" value="socio" />
+	</component>
+	
+</rasty>

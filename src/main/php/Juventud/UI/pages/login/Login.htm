@@ -1,0 +1,58 @@
+<!-- BEGIN: main-->
+<script>
+function  validateLogin( formId ){
+
+	
+	var isValid = WalibaForms.validateForm( formId );
+	
+	return isValid;
+	
+}
+</script>
+
+<style>
+
+.jfVal, .jValSpacercover {
+    display: none;
+}
+
+.jfVal .content {
+    display: none;
+}
+
+
+</style>
+
+<div class="logincontainer">
+<a class="logo" target="_blank" href="#"><img border="0" alt="{login_titulo} - {login_subtitulo}"  title="{login_titulo} - {login_subtitulo}" name="imLogo" id="imLogo" src="{WEB_PATH}/css/images/logo-ferro-las-flores-w.png" width="300"></a>
+
+<!-- Login form -->
+<form id="login_form" target="_top" name="login_form" action='{login_action}'  onsubmit="javascript: return validateLogin('#login_form');" method='post'>
+    <fieldset>
+    <legend>{iniciar_sesion}</legend>
+
+        <div class="item">
+            <input  placeholder="{lbl_username} *" type="text" size="24" value="" id="input_username" name="username" data-required="yes" data-required-msg="{txt_ingrese_username}"/>
+        </div>
+        <div class="item">
+            <input  placeholder="{lbl_password} *"  type="password" classsize="24" value="" id="input_password" name="password" data-required="yes" data-required-msg="{txt_ingrese_password}"/>
+        </div>
+    	<div class="required-fields">(*) {txt_campos_obligatorios}</div>        
+    </fieldset>
+    <!-- BEGIN: msg_error -->
+	<fieldset class="ui-state-error">
+			{msg}	
+	</fieldset>
+	<!-- END: msg_error -->
+    <fieldset class="tblFooters">
+        <input type="submit" id="input_go" value="{btn_ingresar}">
+   	</fieldset>
+   	<div class="login_acciones">
+   		
+   		<span><a href="{link_solicitarClave}">{lbl_solicitarClave}</a></span>
+   	</div>
+	</form>
+
+</div>
+    		
+<!-- END: main-->

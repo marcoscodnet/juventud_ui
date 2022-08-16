@@ -1,0 +1,13 @@
+<rasty specificationClass="Juventud\UI\pages\years\Years" templateLocation="pages/years/Years.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+
+	<component id="yearsFilter" type="YearFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:year.buscar" />
+		<param name="legendAgain" value="msg:year.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

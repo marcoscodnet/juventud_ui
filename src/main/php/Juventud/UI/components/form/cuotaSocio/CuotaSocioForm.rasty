@@ -1,0 +1,83 @@
+<rasty specificationClass="Juventud\UI\components\form\cuotaSocio\CuotaSocioForm" templateLocation="CuotaSocioForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="cuotaSocio.oid" />
+	</component>
+
+
+	
+	<component id="montoCuota" type="InputFindEntity">
+		<param name="inputId" value="str:montoCuota" />
+		<param name="name" value="str:montoCuota" />
+		<param name="value" value="cuotaSocio.montoCuota" />
+		<param name="requiredMessage" value="msg:cuotaSocio.montoCuota.required" />
+		<param name="placeholder" value="msg:cuotaSocio.montoCuota" />
+		<param name="finder" value="montoCuotaFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:MontoCuotaFilter" />
+		
+		
+	</component>
+	
+	<component id="socio" type="InputFindEntity">
+		<param name="inputId" value="str:socio" />
+		<param name="name" value="str:socio" />
+		<param name="value" value="cuotaSocio.socio" />
+		<param name="requiredMessage" value="msg:cuotaSocio.socio.required" />
+		<param name="placeholder" value="msg:cuotaSocio.socio" />
+		<param name="finder" value="socioFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:SocioFilter" />
+		
+	</component>
+	
+	
+	
+	
+	<component id="vencimiento" type="InputDate">
+		<param name="inputId" value="str:vencimiento" />
+		<param name="name" value="str:vencimiento" />
+		<param name="value" value="cuotaSocio.vencimiento" />
+		<param name="placeholder" value="msg:cuotaSocio.vencimiento" />
+		<param name="requiredMessage" value="msg:cuotaSocio.vencimiento.required" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+	<component id="fechaPago" type="InputDate">
+		<param name="inputId" value="str:fechaPago" />
+		<param name="name" value="str:fechaPago" />
+		<param name="value" value="cuotaSocio.fechaPago" />
+		<param name="placeholder" value="msg:cuotaSocio.fechaPago" />
+		
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="value" value="cuotaSocio.monto" />
+		<param name="requiredMessage" value="msg:cuotaSocio.monto.required" />
+		<param name="placeholder" value="msg:cuotaSocio.monto" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="pagada" type="InputCheckBox">
+		<param name="inputId" value="str:pagada" />
+		<param name="name" value="str:pagada" />
+		<param name="value"  value="str:pagada" />
+		<param name="isChecked" value="cuotaSocio.pagada" />
+	</component>
+	
+	
+</rasty>

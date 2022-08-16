@@ -1,0 +1,16 @@
+<rasty specificationClass="Juventud\UI\pages\montoCuotas\modificar\MontoCuotaModificar" templateLocation="pages/montoCuotas/modificar/MontoCuotaModificar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+	<param name="montoCuotaOid" value="get:oid" />
+
+
+	<component id="montoCuotaForm" type="MontoCuotaForm">
+		<param name="legend" value="msg:montoCuota.modificar.legend" />
+		<param name="action" value="linkActionModificarMontoCuota" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="montoCuota" value="montoCuota" />
+	</component>
+	
+</rasty>

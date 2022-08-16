@@ -1,0 +1,53 @@
+<rasty specificationClass="Juventud\UI\components\filter\cuotaSocio\CuotaSocioFilter" templateLocation="CuotaSocioFilter.htm">
+
+	<component id="nro" type="InputText">
+		<param name="name" value="str:nro" />
+		<param name="value" value="criteria.nro" />
+		<param name="placeholder" value="msg:cuotaSocio.nro" />
+	</component>
+	
+	<component id="year" type="InputFindEntity">
+		<param name="inputId" value="str:year" />
+		<param name="name" value="str:year" />
+		
+		<param name="placeholder" value="msg:cuotaSocio.year" />
+		<param name="finder" value="yearFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:YearFilter" />
+		
+	</component>
+	
+	<component id="socio" type="InputFindEntity">
+		<param name="inputId" value="str:socio" />
+		<param name="name" value="str:socio" />
+		
+		<param name="placeholder" value="msg:cuotaSocio.socio" />
+		<param name="finder" value="socioFinderClazz" />
+		<param name="hasPopup" value="boolean:true" />
+		<param name="popupFilterType" value="str:SocioFilter" />
+		
+	</component>
+	
+	<component id="pagada" type="InputCombo">
+		<param name="inputId" value="str:pagada" />
+		<param name="name" value="str:pagada" />
+		<param name="options" value="filtrosSINO" />
+	</component>
+	
+	<component id="fechaPagoDesde" type="InputDate">
+		<param name="inputId" value="str:fechaPagoDesde" />
+		<param name="name" value="str:fechaPagoDesde" />
+		<param name="value" value="criteria.fechaPagoDesde" />
+		<param name="placeholder" value="msg:criteria.fechaPagoDesde" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+
+	<component id="fechaPagoHasta" type="InputDate">
+		<param name="inputId" value="str:fechaPagoHasta" />
+		<param name="name" value="str:fechaPagoHasta" />
+		<param name="value" value="criteria.fechaPagoHasta" />
+		<param name="placeholder" value="msg:criteria.fechaPagoHasta" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+</rasty>

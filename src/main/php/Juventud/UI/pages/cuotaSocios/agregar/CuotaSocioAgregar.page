@@ -1,0 +1,14 @@
+<rasty specificationClass="Juventud\UI\pages\cuotaSocios\agregar\CuotaSocioAgregar" templateLocation="pages/cuotaSocios/agregar/CuotaSocioAgregar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+
+	<component id="cuotaSocioForm" type="CuotaSocioForm">
+		<param name="legend" value="msg:cuotaSocio.agregar.legend" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="action" value="linkActionAgregarCuotaSocio" />
+		<param name="method" value="str:post" />
+		<param name="cuotaSocio" value="cuotaSocio" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,91 @@
+<rasty-application>
+
+	<!-- declaración de las páginas -->
+	<page name="Login" location="pages/login/Login.page" url="login"/>
+
+	<page name="ErrorNoEsperado"   location="pages/errores/ErrorNoEsperado.page" url="error/noesperado"/>
+
+	<page name="Years"   location="pages/years/Years.page" url="years"/>
+	<page name="YearAgregar"   location="pages/years/agregar/YearAgregar.page" url="years/agregar"/>
+	<page name="YearModificar"   location="pages/years/modificar/YearModificar.page" url="years/modificar"/>
+	<page name="YearEliminar"   location="pages/years/eliminar/YearEliminar.page" url="years/eliminar"/>
+	
+	<page name="MontoCuotas"   location="pages/montoCuotas/MontoCuotas.page" url="montoCuotas"/>
+	<page name="MontoCuotaModificar"   location="pages/montoCuotas/modificar/MontoCuotaModificar.page" url="montoCuotas/modificar"/>
+	<page name="MontoCuotaEliminar"   location="pages/montoCuotas/eliminar/MontoCuotaEliminar.page" url="montoCuotas/eliminar"/>
+	
+	<page name="TipoSocios"   location="pages/tipoSocios/TipoSocios.page" url="tipoSocios"/>
+	<page name="TipoSocioAgregar"   location="pages/tipoSocios/agregar/TipoSocioAgregar.page" url="tipoSocios/agregar"/>
+	<page name="TipoSocioModificar"   location="pages/tipoSocios/modificar/TipoSocioModificar.page" url="tipoSocios/modificar"/>
+	<page name="TipoSocioEliminar"   location="pages/tipoSocios/eliminar/TipoSocioEliminar.page" url="tipoSocios/eliminar"/>
+	
+	<page name="Socios"   location="pages/socios/Socios.page" url="socios"/>
+	<page name="SocioAgregar"   location="pages/socios/agregar/SocioAgregar.page" url="socios/agregar"/>
+	<page name="SocioModificar"   location="pages/socios/modificar/SocioModificar.page" url="socios/modificar"/>
+	<page name="SocioEliminar"   location="pages/socios/eliminar/SocioEliminar.page" url="socios/eliminar"/>
+	
+	<page name="CuotaSocios"   location="pages/cuotaSocios/CuotaSocios.page" url="cuotaSocios"/>
+	<page name="CuotaSocioAgregar"   location="pages/cuotaSocios/agregar/CuotaSocioAgregar.page" url="cuotaSocios/agregar"/>
+	<page name="CuotaSocioModificar"   location="pages/cuotaSocios/modificar/CuotaSocioModificar.page" url="cuotaSocios/modificar"/>
+	<page name="CuotaSocioEliminar"   location="pages/cuotaSocios/eliminar/CuotaSocioEliminar.page" url="cuotaSocios/eliminar"/>
+	
+	<!-- declaración de los componentes -->
+	
+	<!-- menu -->
+	<component name="HeaderNav" location="components/header" />
+	<component name="HeaderNavMetro" location="components/header" />
+	
+	<component name="FooterJuventud" location="components/footer" />
+
+	<!-- forms -->
+	<component name="YearForm"   location="components/form/year"/>
+	<component name="MontoCuotaForm"   location="components/form/montoCuota"/>
+	<component name="TipoSocioForm"   location="components/form/tipoSocio"/>
+	<component name="SocioForm"   location="components/form/socio"/>
+	<component name="CuotaSocioForm"   location="components/form/cuotaSocio"/>
+	
+	<!-- filters -->
+	<component name="YearFilter"   location="components/filter/year"/>
+	<component name="MontoCuotaFilter"   location="components/filter/montoCuota"/>
+	<component name="TipoSocioFilter"   location="components/filter/tipoSocio"/>
+	<component name="SocioFilter"   location="components/filter/socio"/>
+	<component name="CuotaSocioFilter"   location="components/filter/cuotaSocio"/>
+	<!-- boxes -->
+	
+	<!-- pdfs -->
+
+	<!-- layouts -->
+	<component name="JuventudMetroLayout" location="layouts" />
+	<component name="JuventudLoginMetroLayout" location="layouts" />
+	<component name="JuventudErrorLayout" location="layouts" />
+	<component name="RastySecurityLayout" location="layouts" />
+	<component name="RastySecurityPublicLayout" location="layouts" />
+	
+	<!-- declaración de las actions -->
+	<action name="Login" class="Juventud\UI\actions\login\Login" url="login"/>
+	<action name="Logout" class="Juventud\UI\actions\login\Logout" url="logout"/>
+
+	<action name="findEntities" class="Juventud\UI\actions\common\ListarEntitiesJson" url="findEntities"/>
+	<action name="findEntity" class="Juventud\UI\actions\common\GetEntityJson" url="findEntity"/>
+	
+	<action name="AgregarYear" class="Juventud\UI\actions\years\AgregarYear" url="years/agregar"/>
+	<action name="ModificarYear" class="Juventud\UI\actions\years\ModificarYear" url="years/modificar"/>
+	<action name="EliminarYear" class="Juventud\UI\actions\years\EliminarYear" url="years/eliminar"/>
+	
+	<action name="ModificarMontoCuota" class="Juventud\UI\actions\montoCuotas\ModificarMontoCuota" url="montoCuotas/modificar"/>
+	<action name="EliminarMontoCuota" class="Juventud\UI\actions\montoCuotas\EliminarMontoCuota" url="montoCuotas/eliminar"/>
+
+	<action name="AgregarTipoSocio" class="Juventud\UI\actions\tipoSocios\AgregarTipoSocio" url="tipoSocios/agregar"/>
+	<action name="ModificarTipoSocio" class="Juventud\UI\actions\tipoSocios\ModificarTipoSocio" url="tipoSocios/modificar"/>
+	<action name="EliminarTipoSocio" class="Juventud\UI\actions\tipoSocios\EliminarTipoSocio" url="tipoSocios/eliminar"/>
+	
+	<action name="AgregarSocio" class="Juventud\UI\actions\socios\AgregarSocio" url="socios/agregar"/>
+	<action name="ModificarSocio" class="Juventud\UI\actions\socios\ModificarSocio" url="socios/modificar"/>
+	<action name="EliminarSocio" class="Juventud\UI\actions\socios\EliminarSocio" url="socios/eliminar"/>
+	
+	<action name="AgregarCuotaSocio" class="Juventud\UI\actions\cuotaSocios\AgregarCuotaSocio" url="cuotaSocios/agregar"/>
+	<action name="ModificarCuotaSocio" class="Juventud\UI\actions\cuotaSocios\ModificarCuotaSocio" url="cuotaSocios/modificar"/>
+	<action name="EliminarCuotaSocio" class="Juventud\UI\actions\cuotaSocios\EliminarCuotaSocio" url="cuotaSocios/eliminar"/>
+	
+	
+</rasty-application>

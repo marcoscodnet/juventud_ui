@@ -1,0 +1,6 @@
+<rasty specificationClass="Juventud\UI\layouts\JuventudErrorLayout" templateLocation="JuventudErrorLayout.htm">
+
+	<component id="footer" type="FooterJuventud">
+	</component>
+
+</rasty>

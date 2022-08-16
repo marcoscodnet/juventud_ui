@@ -1,0 +1,16 @@
+<rasty specificationClass="Juventud\UI\pages\years\modificar\YearModificar" templateLocation="pages/years/modificar/YearModificar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+	<param name="yearOid" value="get:oid" />
+
+
+	<component id="yearForm" type="YearForm">
+		<param name="legend" value="msg:year.modificar.legend" />
+		<param name="action" value="linkActionModificarYear" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="year" value="year" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,698 @@
+{
+
+	"common.campos_obligatorios":"Campos requeridos",
+
+	"app.title":"Sistema Socios Juventud Deportiva",
+
+	"app.pdf.footer":"Sistema Socios Juventud Deportiva / Tel. (xxx) xxxxxx / Dir. xxxx - xxx - xxxx",
+	
+	"menu.page":"Opciones de la página",
+	"menu.main":"Menú de navegación",
+	"menu.main.reload":"Actualizar la página",
+	"menu.main.panel":"Panel de trabajo",
+	
+	"menu.admin":"Administración",
+	"menu.admin_home":"Tablero de control",
+
+	"menu.seguridad":"Seguridad",
+	
+	
+	
+	"menu.usuarios":"Usuarios",
+	"menu.usuarios.agregar":"Nuevo Usuario",
+	"menu.usuarios.modificar":"Modificar Usuario",
+	"menu.usuarios.asignarRoles":"Asignar roles",
+	"menu.usuarios.consultarRoles":"Consultar roles",
+	"menu.usuarios.eliminar":"Eliminar Usuario",
+	
+	"menu.permisos":"Permisos",
+	"menu.permisos.agregar":"Nuevo Permiso",
+	"menu.permisos.modificar":"Modificar Permiso",
+	
+	"menu.roles":"Roles",
+	"menu.roles.agregar":"Nuevo Rol",
+	"menu.roles.modificar":"Modificar Rol",
+	"menu.roles.asignarPermisos":"Asignar permisos",
+	"menu.roles.consultarPermisos":"Consultar permisos",
+
+	
+
+	
+	"menu.logout":"Salir del sistema",
+	
+	"user.required.exception.msg": "Debe iniciar sesión para operar el sistema",
+	"user.permission.exception.msg": "No cuenta con los privilegios para realizar la operación",  
+	"invalid.password.exception.msg": "La clave ingresada no es válida",
+	
+	"login.title":"Sistema Socios Juventud Deportiva",
+	"login.titulo":"Club Juventud Deportiva",
+	"login.subtitulo":"Sistema de Socios",
+	
+	"login.iniciar_sesion":"Iniciar sesión",
+	"login.username":"Usuario",
+	"login.password":"Clave",
+	"login.ingrese_username":"Ingrese un usuario",
+	"login.ingrese_password":"Ingrese una clave",
+	"login.ingresar":"Comenzar!",
+	"login.invalid_password": "La clave ingresada no es válida",
+	"login.user_not_found": "El usuario ingresado no es válido",
+
+	"login.solicitarNuevaClave": "Olvidé mi clave",
+	"login.registrarse": "Registrarse",
+
+	"admin_home.title": "Sistema Socios Ferro / BackOffice",
+	"admin_home.subtitle": "Administración",
+
+ 	"dia.domingo.label": "Domingo",
+	"dia.lunes.label": "Lunes",
+	"dia.martes.label": "Martes",
+	"dia.miercoles.label": "Miércoles",
+	"dia.jueves.label": "Jueves",
+	"dia.viernes.label": "Viernes",
+	"dia.sabado.label": "Sábado",
+    								   
+   	"tipo.documento.dni.label":"DNI", 
+	"tipo.documento.le.label":"LE",
+	"tipo.documento.lc.label":"LC",
+	"tipo.documento.ci.label":"CI",
+	"tipo.documento.pasaporte.label":"Pasaporte",
+	
+	"sexo.m.label": "Masculino",
+	"sexo.f.label": "Femenino",
+	
+	"iva.ri.label":"Responsable Inscripto",
+	"iva.m.label": "Responsable Monotributo",
+	"iva.rni.label":"Responsable No Inscripto",
+	"iva.e.label":"Excento",
+	"iva.cf.label":"Consumido Final",
+
+	
+
+	"usuarios.title": "Listado de Usuarios",
+	
+	"usuarios.listar": "Listado de Usuarios",
+	"usuario.agregar": "Agregar un nuevo Usuario",
+	"usuario.agregar.title": "Agregar un nuevo Usuario",
+	"usuario.agregar.legend": "Ingrese los datos del Usuario",
+	
+	"user.add.username.repetead": "Ya existe un usuario para el nombre ingresado",
+	
+	"usuario.modificar": "Modificar datos del Usuario",
+	"usuario.modificar.title": "Modificar Usuario",
+	"usuario.modificar.legend": "Modifique los datos del Usuario",
+	
+	"usuario.eliminar": "Eliminar el Usuario",
+	"usuario.eliminar.title": "Eliminar Usuario",
+	"usuario.eliminar.legend": "Confirma eliminar el Usuario?",
+	
+	"usuario.eliminar.usuario.logueado.exception": "No puede eliminarse Ud mismo",
+	"usuario.eliminar.cliente.exception": "No puede eliminar a un cliente",
+	
+	"usuario.buscar": "Buscar Usuarios",
+	"usuario.buscar.again": "Afinar búsqueda...",
+
+	"usuario.username":"Nombre de usuario",
+	"usuario.username.unicity":"Ya existe un Usuario para el Nombre de usuario indicado",
+	"usuario.username.required":"Ingrese un nombre de usuario",
+	
+	"usuario.name":"Nombre",
+	"usuario.name.required":"Ingrese un nombre",
+	
+	"usuario.lastname":"Apellido",
+	"usuario.lastname.required":"Ingrese un apellido",
+	
+	"usuario.email":"E-mail",
+	"usuario.email.unicity":"Ya existe un Usuario para el E-mail indicado",
+	"usuario.email.required":"Ingrese un e-mail",
+	
+   	"usuario.password":"Clave",
+	"usuario.password.required":"Ingrese una clave",
+	
+	"usuario.password.repeat":"Repetir Clave",
+	"usuario.password.repeat.required":"Ingrese nuevamente la clave",
+	
+	"usuario.password.repeat.invalid":"Las claves ingresadas son distintas",
+	
+	"usuario.password.old":"Clave actual",
+	"usuario.password.old.required":"Ingrese la clave actual",
+
+	"usuario.newPassword":"Nueva clave",
+	"usuario.newPassword.required":"Ingrese la nueva clave",
+
+	"usuario.newPassword.repeat":"Repetir nueva clave",
+	"usuario.newPassword.repeat.required":"Ingrese nuevamente la clave",
+	
+	"user.password.invalid": "La clave ingresada no es la correcta",
+	
+	"usuario.cambiarClave.newPasswordRepetir.invalid": "Las nuevas claves ingresadas son distintas",
+	
+	
+	"solicitarNuevaClave.title": "Recupero de clave",
+	"solicitarNuevaClave.legend": "Recupero de clave",
+	"solicitarNuevaClave.submit": "Recuperar",
+	"solicitarNuevaClave.login": "Ingresar",
+	"solicitarNuevaClave.registrarse": "Registrarse",
+	
+	"solicitarNuevaClave.usuario.invalid": "Usuario no registrado",
+	"solicitarNuevaClaveSuccess.title": "Recupero de clave",
+	
+	"nuevaClave.confirmar.title": "Obtener nueva clave",
+	"nuevaClave.confirmar.legend": "Genera tu nueva clave",
+	
+	"nuevaClave.newPassword": "Nueva clave",
+	"nuevaClave.newPassword.repetir": "Repite la clave",
+	"nuevaClave.securitycode": "Código de verificación",
+	"nuevaClave.captcha": "Ingresa el código de verificación",
+	
+	"nuevaClave.captcha.invalido": "El código de verificación no es correcto", 
+	
+	"nuevaClave.newPassword.repetir.invalid": "Las claves ingresadas no coinciden", 
+	
+	"nuevaClave.newPassword.requerida": "Ingresa la nueva clave",
+	"nuevaClave.newPassword.repetir.requerida": "Ingresa nuevamente la clave",
+	"nuevaClave.captcha.requerido": "Ingresa el código de verificación",
+	
+	"nuevaClaveConfirmar.success.title": "Recupero de clave",
+	 
+	
+	"usuario.oid":"Código interno",
+	"usuario.lastLogin":"Último login",
+  	"usuario.loginFrom":"IP",
+  	
+  	"usuario.asignarRoles.title": "Asignando roles",
+	"usuario.asignarRoles.legend": "Asignar roles al usuario $1",
+
+  	
+
+	"permisos.title": "Listado de Permisos",
+	
+	"permisos.listar": "Listado de Permisos",
+	"permiso.agregar": "Agregar un nuevo Permiso",
+	"permiso.agregar.title": "Agregar un nuevo Permiso",
+	"permiso.agregar.legend": "Ingrese los datos del Permiso",
+	
+	"permiso.modificar": "Modificar datos del Permiso",
+	"permiso.modificar.title": "Modificar Permiso",
+	"permiso.modificar.legend": "Modifique los datos del Permiso",
+	
+	"permiso.buscar": "Buscar Permisos",
+	"permiso.buscar.again": "Afinar búsqueda...",
+
+	"permiso.oid":"Código",
+	"permiso.name":"Nombre",
+	"permiso.name.required":"Ingrese un nombre",
+	"permiso.name.unicity":"Ya existe un Permiso con el Nombre indicado",
+	"permiso.description":"Descripción",
+	"permiso.padre":"Padre",
+	
+
+	"roles.title": "Listado de Roles",
+	
+	"roles.listar": "Listado de Roles",
+	"rol.agregar": "Agregar un nuevo Rol",
+	"rol.agregar.title": "Agregar un nuevo Rol",
+	"rol.agregar.legend": "Ingrese los datos del Rol",
+	
+	"usergroup.add.name.repetead": "Ya existe un rol para el nombre ingresado",
+	
+	"rol.modificar": "Modificar datos del Rol",
+	"rol.modificar.title": "Modificar Rol",
+	"rol.modificar.legend": "Modifique los datos del Rol",
+	
+	"rol.buscar": "Buscar Roles",
+	"rol.buscar.again": "Afinar búsqueda...",
+
+	"rol.asignarPermisos.title": "Asignando permisos",
+	"rol.asignarPermisos.legend": "Asignar permisos al rol $1",
+
+	"rol.consultarPermisos.title": "Consultar permisos de un rol",
+	"rol.consultarPermisos.legend": "Permisos del rol $1",
+
+	"usuario.consultarRoles.legend" :"Consultando roles de $1",
+	"usuario.consultarRoles.title" :"Roles de usuario}",
+
+	"rol.oid":"Código",
+	"rol.name":"Nombre",
+	"rol.name.required":"Ingrese un nombre",
+	"rol.name.unicity":"Ya existe un Rol con el Nombre indicado",
+	"rol.description":"Descripción",
+	
+  	"prestamo.solicitud.widget.title": "Solicitar Préstamo",
+  	
+  	"prestamo.solicitud.title": "Solicitar Préstamo",
+  	
+  	"prestamo.solicitud.dinero": "¿Cuánto necesitás?",
+  	"prestamo.solicitud.dias": "¿Cuándo lo devolverás?",
+  	"prestamo.solicitud.cantidadCuotas": "¿En cuántas cuotas lo devolverás?",
+  	"prestamo.solicitud.moneda.unit": "€",
+  	"prestamo.solicitud.dias.unit": "días",
+  	"prestamo.solicitud.submit": "Obtenga su dinero ahora",
+  	"prestamo.solicitud.apr": "APR",
+  	"prestamo.solicitud.interesAbsoluto": "Interés",
+  	"prestamo.solicitud.fechaDevolucion": "Día a devolver",
+  	"prestamo.solicitud.cantidadDevolver": "Total a devolver",
+ 
+ 	"prestamo.solicitud.datosBancarios": "Datos Bancarios",
+ 
+ 	"prestamo.solicitud.paso1": "Datos personales",
+ 	"prestamo.solicitud.paso2": "Informe Crediticio",
+ 	"prestamo.solicitud.paso3": "Datos bancarios",
+ 	"prestamo.solicitud.paso4": "Valida tus datos",
+ 	"prestamo.solicitud.paso5": "Recibe tu dinero",
+ 	
+ 	
+ 	"prestamo.solicitud.informeCrediticio": "Informe Crediticio",
+ 	
+ 	"prestamo.solicitud.confirmarSolicitud.legend": "Confirma tu solicitud",
+ 	"prestamo.solicitar.confirmarSolicitud.msg":"Confirma el dinero solicitado",
+ 	"prestamo.solicitar.aceptarContrato.msg":"Declaro haber leído el contrato y aceptar los términos y condiciones",
+ 	"prestamo.solicitar.aceptarContrato.requerido": "Debes aceptar los términos y condiciones",
+ 	"prestamo.solicitar.leerContrato":"Leer contrato",
+ 	
+ 	"prestamo.solicitar.requisitosOk.legend":"Datos validados",
+ 	"prestamo.solicitar.requisitosOk.msg":"Todos tus datos fueron validados correctamente. <br /> Ya puedes solicitar tu dinero.",
+ 	
+ 	"prestamo.solicitud.success.titulo": "Solicitud en evaluación",
+ 	"prestamo.solicitud.success.title": "Solicitud en evaluación",
+ 	
+ 	"prestamo.solicitud.pendiente.titulo": "Solicitud en evaluación",
+ 	"prestamo.solicitud.pendiente.title": "Solicitud en evaluación",
+ 	
+ 	"prestamo.solicitud.aprobada.titulo": "Solicitud aprobada",
+ 	"prestamo.solicitud.aprobada.title": "Solicitud aprobada",
+ 	
+ 	"registracion.continuar": "Continuar",
+  	
+  	
+  	"registracion.agregar.title": "Registrarse",
+  	
+  	"registracion.prestamo.legend": "Préstamo",
+ 	"registracion.dineroSolicitado.requerido": "Indica cuánto necesitás",
+ 	"registracion.dineroSolicitado": "¿Cuánto necesitás?",
+ 	"registracion.diasDevolver": "¿Cuándo lo devolverás?",
+ 	"registracion.diasDevolver.requerido": "Incida los días a devolver el dinero",
+ 	"registracion.cantidadCuotas": "¿En cuántas cuotas lo devolverás?",
+ 	"registracion.cantidadCuotas.requerido": "Incida las cuotas para devolver el dinero",
+ 	
+ 	"registracion.nombre.legend": "Tu nombre (tal cual está en tu dni)",
+ 	"registracion.tipoDocumento": "Tipo documento",
+ 	"registracion.nroDocumento": "Nº documento",
+ 	"registracion.nroDocumento.guion": "incluir guión al final",
+ 	
+ 	"registracion.documento.repetido": "Ya existe un cliente registrado para el Tipo y Nº documento indicado",
+ 	
+ 	"registracion.nombre": "Nombre",
+ 	"registracion.primerApellido": "Primer apellido",
+ 	"registracion.segundoApellido": "Segundo apellido",
+ 	"registracion.segundoApellido.checkbox": "Tengo segundo apellido",
+ 	"registracion.segundoApellido.requerido": "Ingresa tu segundo apellido",
+
+ 	"registracion.tipoDocumento.requerido": "Ingresa tu Tipo documento",
+ 	"registracion.nroDocumento.requerido": "Ingresa tu Nº documento",
+ 	"registracion.nombre.requerido": "Ingresa tu Nombre",
+ 	"registracion.primerApellido.requerido": "Ingresa tu Primer apellido",
+ 	
+ 	"registracion.usuario.legend": "Crea tu usuario",
+ 	"registracion.email": "E-mail",
+ 	"registracion.emailRepetir": "Confirmar e-mail",
+ 	"registracion.clave": "Contraseña",
+ 	"registracion.clave.formato": "8 o más caracteres e incluye al menos una mayúscula y un número",
+ 	"usuario.clave.formato": "8 o más caracteres e incluye al menos una mayúscula y un número",
+ 	"registracion.claveRepetir": "Confirmar contraseña",
+	"registracion.claveRepetir.invalid": "Las contraseñas ingresadas no coinciden",
+	
+	"registracion.email.repetido": "Ya existe un cliente con el email ingresado",
+ 	"registracion.confirmar.codigoExpirado": "El código de validación no es válido",
+ 	
+ 	
+	"email.formato.invalido":"formato de e-mail incorrecto",
+
+ 	"registracion.email.requerido": "Ingresa tu e-mail",
+ 	"registracion.emailRepetir.requerido": "Confirma tu e-mail",
+ 	"registracion.clave.requerida": "Ingreso una Contraseña",
+ 	"registracion.claveRepetir.requerida": "Confirmar la contraseña",
+ 	
+ 	"registracion.datos.legend": "Tus datos",
+ 	"registracion.genero": "Género",
+ 	"registracion.fechaNacimiento": "Fecha de nacimiento",
+ 	"registracion.estadoCivil": "Estado civil",
+ 	"registracion.tipoVivienda": "Tipo de vivienda",
+ 	"registracion.domicilioCalle": "Calle",
+ 	"registracion.domicilioNumero": "Número",
+ 	"registracion.domicilioPiso": "Piso",
+ 	"registracion.domicilioDepto": "Puerta",
+ 	"registracion.poblacion": "Población",
+ 	"registracion.provincia": "Provincia",
+ 	"registracion.codigoPostal": "Código postal",
+
+ 	"registracion.genero.requerido": "Indica tu Género",
+ 	"registracion.fechaNacimiento.requerida": "Ingreso tu fecha de nacimiento",
+ 	"registracion.estadoCivil.requerido": "Indica tu estado civil",
+ 	"registracion.tipoVivienda.requerida": "Indica tu tipo de vivienda",
+ 	"registracion.domicilioCalle.requerida": "Ingresa la calle de tu dirección",
+ 	"registracion.domicilioNumero.requerido": "Ingresa el número de tu dirección",
+ 	"registracion.poblacion.requerida": "Ingresa la Población",
+ 	"registracion.provincia.requerida": "Indica la Provincia",
+ 	"registracion.codigoPostal.requerido": "Ingresa el Código postal",
+ 	
+ 	"registracion.editar.valores.prestamo": "Modificar valores",
+ 	"registracion.editar.valores.prestamo.ocultar": "Ocultar",
+ 	
+ 	"registracion.invalido.mayor65": "No debes tener más de 65 anios...",
+	"registracion.invalido.menor18": "Debes ser mayor a 18 anios...",
+
+ 	"registracion.confirmar.title": "Validando tu registración",
+  	"registracion.confirmar.legend": "Ingresa el código de seguridad",
+  	"registracion.securitycode": "Código de seguridad",
+  	"registracion.captcha": "Ingresa el código de seguridad",
+  	"registracion.captcha.requerido": "Ingresa el código de seguridad",
+  	"registracion.captcha.invalido ": "El código de seguridad no es correcto",
+  	
+  	
+
+
+	"registroActividad.oid": "Id",
+	"registroActividad.fecha": "Fecha",
+	"registroActividad.actividad": "Actividad",
+	"registroActividad.cliente": "Cliente",
+	
+  	"registroActividades.title": "Registros de actividades",
+  	"registroActividad.buscar": "Buscar registros de actividad",
+ 
+  	
+ 	
+ 	"catalogo.nombre": "Nombre",
+ 	"catalogo.codigo": "Código",
+ 	
+ 	"provincia.oid": "Identificador",
+ 	"provincia.codigo": "Código",
+ 	"provincia.nombre": "Nombre",
+ 	"provincia.codigoPostal": "Prefijo",
+ 	
+ 	"provincias.title": "Provincias",
+ 	"provincia.buscar": "Buscar provincias",
+
+ 	"estadoCivil.oid": "Identificador",
+ 	"estadoCivil.codigo": "Código",
+ 	"estadoCivil.nombre": "Nombre",
+ 	
+ 	"estadosCiviles.title": "Estados civiles",
+ 	"estadoCivil.buscar": "Buscar estados civiles",
+ 	
+ 	"tipoDocumento.oid": "Identificador",
+ 	"tipoDocumento.codigo": "Código",
+ 	"tipoDocumento.nombre": "Nombre",
+ 	
+ 	"tiposDocumento.title": "Tipos documentos",
+ 	"tipoDocumento.buscar": "Buscar tipos de documentos",
+ 	
+  	
+ 	
+ 	
+ 	
+ 	"genero.oid": "Identificador",
+ 	"genero.codigo": "Código",
+ 	"genero.nombre": "Nombre",
+ 	
+ 	"generos.title": "Géneros",
+ 	"genero.buscar": "Buscar géneros",
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	"registracion.login.usuario": "Email",
+ 	"registracion.login.clave": "Clave",
+ 	"registracion.login": "Login",
+ 
+ 
+ 	
+ 	
+  	"grid.operaciones": "Operaciones",
+   	"grid.resultados": "Resultados de la búsqueda",
+   	
+   	"entitygrid.pagination.of": "de",
+   	"entitygrid.pagination.next": "siguiente",
+   	"entitygrid.pagination.previous": "anterior",
+    "entitygrid.pagination.first": "primero",
+    "entitygrid.pagination.last": "último",
+
+	"number.format.invalid": "Formato de número incorrecto",
+ 	
+    "form.editar": "Editar",
+    "form.aceptar": "Confirmar",
+    "form.cancelar": "Cancelar",
+    "form.volver": "Volver",
+    "form.enviar": "Enviar",
+    "form.continuar": "Continuar",
+    "form.aprobar": "Aprobar",
+    "form.rechazar": "Rechazar",
+    "form.solicitar": "Solicitar",
+    "form.confirmar": "Confirmar",
+    "form.infoAdicional": "Solicitar documentación",
+    "form.validarDocumentacion": "Validar documentación",
+    "form.anular": "Anular",
+    "form.reintentar": "Reintentar",
+    
+    "filter.buscar": "Buscar",
+    "filter.buscar.again": "Afinar búsqueda...",
+    "filter.resultados": "Resultados de la búsqueda",
+    "filter.opciones": "Opciones",
+    "filter.close.label": "Cerrar",
+ 
+ 	"combo.empty": "- seleccionar -",
+ 
+ 	"addpopup.legend":"Agregar",
+    
+    "autocomplete.empty.result": "No se encontraron resultados",
+    "autocomplete.entity.add": "Agregar",
+ 
+ 	"criteria.fechaDesde": "Desde",
+    "criteria.fechaHasta": "Hasta",
+ 	
+ 	"criteria.sin_especificar": "- sin especificar -",
+	"criteria.no": "No",
+	"criteria.si": "Si",
+	"criteria.predefinidos": "Filtros predefinidos",
+	   
+	"image.empty": "selecciona una imagen",
+	   
+	"numero.rango.maximo": "Debes ingresar un valor menor a {0}",
+ 	"numero.rango.minimo": "Debes ingresar un valor mayor a {0}",
+ 
+ 	"error.noesperado.title": "Error no esperado",
+ 	"prestamo.inexistente": "El préstamo no existe",
+ 	
+ 	
+	
+	"uploadImage.loading": "cargando...",
+	
+    "xxx": "yyy",
+    
+ 	"operacion.invalida": "Operación inválida",
+ 	"page.not.found": "Página no disponible",
+ 	
+ 	"No result was found for query although at least one row was expected.": "la información no parece correcta",
+ 	  
+
+	
+	"tipoDocumento.seleccionar": "- Selecciona un tipo de documento -",
+   	
+    "genero.seleccionar": "- Selecciona un género -",
+   	"provincia.seleccionar": "- Selecciona una provincia -",
+    "estadoCivil.seleccionar": "- Selecciona un estado civil -",
+   	
+   	"estadoCivil.seleccionar": "- Selecciona un estado civil -",
+   	
+ 
+    
+    
+    "menu.juventud":"Administración",
+    "menu.years":"Años",
+	
+    
+    "criteria.nombre": "Nombre",
+    
+    
+    "years.title": "Años",
+    "year.buscar": "Buscar año",
+    
+    
+    "year.oid": "Identificador",
+    "year.nombre": "Año",
+    "year.cuotas": "Cuotas",
+    "year.monto": "Monto",
+    
+    
+    "menu.years.modificar": "Modificar año",
+    
+    "year.modificar.legend": "Modificar año",
+    "year.modificar.title": "Modificar año",
+    
+    "menu.years.agregar": "Agregar año",
+    
+    "year.agregar.legend": "Agregar año",
+    "year.agregar.title": "Agregar año",
+    
+    "menu.years.eliminar": "Eliminar año",
+    
+    "year.eliminar.legend": "Eliminar año",
+    "year.eliminar.title": "Eliminar año",
+    
+    "year.nombre.required": "Ingrese un año",
+    "year.cuotas.required": "Ingrese cuotas",
+    "year.monto.required": "Ingrese un monto",
+    
+     "menu.years.montoCuotas": "Modificar cuotas",
+     
+     "montoCuotas.title": "Montos de las cuotas",
+     "montoCuota.buscar": "Buscar cuota",
+     
+     "criteria.year": "Año",
+     "criteria.nro": "Número",
+     
+     "montoCuota.oid": "Identificador",
+    "montoCuota.year": "Año",
+    "montoCuota.nro": "Número",
+    "montoCuota.vencimiento": "Vencimiento",
+    "montoCuota.monto": "Monto",
+    
+    "menu.montoCuotas.modificar": "Modificar cuota",
+    "menu.montoCuotas.eliminar": "Eliminar cuota",
+    
+    "montoCuota.modificar.legend": "Modificar cuota",
+    "montoCuota.modificar.title": "Modificar cuota",
+    
+    "montoCuota.eliminar.legend": "Eliminar cuota",
+    "montoCuota.eliminar.title": "Eliminar cuota",
+    
+    "montoCuota.year.required": "Ingrese un año",
+    "montoCuota.nro.required": "Ingrese un número",
+    "montoCuota.monto.required": "Ingrese un monto",
+    "montoCuota.vencimiento.required": "Ingrese un vencimiento",
+    
+    "menu.tipoSocios":"Tipos de socio",
+    
+    "criteria.tipo": "Tipo",
+    "criteria.pagaCuota": "Paga Cuota",
+    
+    
+    "tipoSocios.title": "Tipos de socio",
+    "tipoSocio.buscar": "Buscar tipo",
+    
+    "tipoSocio.oid": "Identificador",
+    "tipoSocio.tipo": "Tipo",
+    "tipoSocio.pagaCuota": "Paga Cuota",
+    
+    "filter.yes": "Si",
+    "filter.no": "No",
+    
+    "menu.tipoSocios.modificar": "Modificar tipo de socio",
+    
+    "tipoSocio.modificar.legend": "Modificar tipo de socio",
+    "tipoSocio.modificar.title": "Modificar tipo de socio",
+    
+    "menu.tipoSocios.agregar": "Agregar tipo de socio",
+    
+    "tipoSocio.agregar.legend": "Agregar tipo de socio",
+    "tipoSocio.agregar.title": "Agregar tipo de socio",
+    
+    "menu.tipoSocios.eliminar": "Eliminar tipo de socio",
+    
+    "tipoSocio.eliminar.legend": "Eliminar tipo de socio",
+    "tipoSocio.eliminar.title": "Eliminar tipo de socio",
+    
+    "tipoSocio.tipo.required": "Ingrese un tipo",
+    
+    "menu.socios":"Socios",
+    
+    "criteria.apellido": "Apellido",
+    "criteria.dni": "D.N.I.",
+    "criteria.tipoSocio": "Tipo de socio",
+    "criteria.email": "E-mail",
+    
+    
+    "socios.title": "Socios",
+    "socio.buscar": "Buscar socio",
+    
+    "socio.oid": "Identificador",
+    "socio.tipoSocio": "Tipo de socio",
+    "socio.pagaDesde": "Abona cuota desde",
+    "socio.nombre": "Nombre",
+    "socio.apellido": "Apellido",
+    "socio.dni": "D.N.I.",
+    "socio.email": "E-mail",
+    "socio.direccion": "Dirección",
+    "socio.telefono": "Teléfono",
+    
+    
+    "menu.socios.modificar": "Modificar socio",
+    
+    "socio.modificar.legend": "Modificar socio",
+    "socio.modificar.title": "Modificar socio",
+    
+    "menu.socios.agregar": "Agregar socio",
+    
+    "socio.agregar.legend": "Agregar socio",
+    "socio.agregar.title": "Agregar socio",
+    
+    "menu.socios.eliminar": "Eliminar socio",
+    
+    "socio.eliminar.legend": "Eliminar socio",
+    "socio.eliminar.title": "Eliminar socio",
+    
+    "socio.nombre.required": "Ingrese un nombre",
+    "socio.apellido.required": "Ingrese un apellido",
+    "socio.dni.required": "Ingrese un D.N.I.",
+    "socio.email.required": "Ingrese un E-mail",
+    "socio.email.invalid": "Ingrese un E-mail válido",
+    "socio.pagaDesde.required": "Ingrese una fecha",
+    "socio.tipoSocio.required": "Elija un tipo de socio",
+    
+    "menu.cuotaSocios":"Cuotas",
+    
+    "criteria.socio": "Socio",
+    "criteria.pagada": "Pagada",
+    "criteria.fechaPagoDesde": "Fecha de Pago Desde",
+    "criteria.fechaPagoHasta": "Fecha de Pago Hasta",
+    
+    
+    "cuotaSocios.title": "Cuotas",
+    "cuotaSocio.buscar": "Buscar cuota",
+    
+    "cuotaSocio.oid": "Identificador",
+    "cuotaSocio.year": "Año",
+    "cuotaSocio.nro": "Número",
+    "cuotaSocio.socio": "Socio",
+    "cuotaSocio.montoCuota": "Año Número",
+    "cuotaSocio.monto": "Monto",
+    "cuotaSocio.vencimiento": "Vencimiento",
+    "cuotaSocio.fechaPago": "Fecha de Pago",
+     "cuotaSocio.pagada": "Pagada",
+    
+    
+    "menu.cuotaSocios.modificar": "Modificar cuota",
+    
+    "cuotaSocio.modificar.legend": "Modificar cuota",
+    "cuotaSocio.modificar.title": "Modificar cuota",
+    
+    "menu.cuotaSocios.agregar": "Agregar cuota",
+    
+    "cuotaSocio.agregar.legend": "Agregar cuota",
+    "cuotaSocio.agregar.title": "Agregar cuota",
+    
+    "menu.cuotaSocios.eliminar": "Eliminar cuota",
+    
+    "cuotaSocio.eliminar.legend": "Eliminar cuota",
+    "cuotaSocio.eliminar.title": "Eliminar cuota",
+    
+    "cuotaSocio.montoCuota.required": "Ingrese el Año y Número",
+    "cuotaSocio.socio.required": "Ingrese un socio",
+    "cuotaSocio.monto.required": "Ingrese un monto",
+    "cuotaSocio.vencimiento.required": "Ingrese un Vencimiento"
+    
+    
+    
+    
+}

@@ -1,0 +1,100 @@
+<rasty specificationClass="Juventud\UI\components\form\socio\SocioForm" templateLocation="SocioForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="socio.oid" />
+	</component>
+
+	
+
+	
+	<component id="nombre" type="InputText">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="socio.nombre" />
+		<param name="requiredMessage" value="msg:socio.nombre.required" />
+		<param name="placeholder" value="msg:socio.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	<component id="apellido" type="InputText">
+		<param name="inputId" value="str:apellido" />
+		<param name="name" value="str:apellido" />
+		<param name="value" value="socio.apellido" />
+		<param name="requiredMessage" value="msg:socio.apellido.required" />
+		<param name="placeholder" value="msg:socio.apellido" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="dni" type="InputNumber">
+		<param name="inputId" value="str:dni" />
+		<param name="name" value="str:dni" />
+		<param name="value" value="socio.dni" />
+		<param name="requiredMessage" value="msg:socio.dni.required" />
+		<param name="placeholder" value="msg:socio.dni" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="email" type="InputText">
+		<param name="inputId" value="str:email" />
+		<param name="name" value="str:email" />
+		<param name="value" value="socio.email" />
+		<param name="placeholder" value="msg:socio.email" />
+		<param name="checkEmail" value="str:1" />
+		<param name="invalidEmailMessage" value="msg:socio.email.invalid" />
+		<param name="requiredMessage" value="msg:socio.email.required" />
+		
+	</component>
+	
+	<component id="telefono" type="InputText">
+		<param name="inputId" value="str:telefono" />
+		<param name="name" value="str:telefono" />
+		<param name="value" value="socio.telefono" />
+		<param name="placeholder" value="msg:socio.telefono" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+
+	
+	<component id="direccion" type="InputText">
+		<param name="inputId" value="str:direccion" />
+		<param name="name" value="str:direccion" />
+		<param name="value" value="socio.direccion" />
+		<param name="placeholder" value="msg:socio.direccion" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="pagaDesde" type="InputDate">
+		<param name="inputId" value="str:pagaDesde" />
+		<param name="name" value="str:pagaDesde" />
+		<param name="value" value="socio.pagaDesde" />
+		<param name="placeholder" value="msg:socio.pagaDesde" />
+		<param name="requiredMessage" value="msg:socio.pagaDesde.required" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+	<component id="tipoSocio" type="InputCombo">
+		<param name="inputId" value="str:tipoSocio" />
+		<param name="name" value="str:tipoSocio" />
+		<param name="options" value="tipoSocios" />
+		<param name="value" value="socio.tipoSocio" />
+		<param name="finder" value="tipoSocioFinderClazz" />
+		<param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+		<param name="requiredMessage" value="msg:socio.tipoSocio.required" />
+	</component>
+	
+	
+</rasty>

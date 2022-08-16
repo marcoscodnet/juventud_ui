@@ -1,0 +1,16 @@
+<rasty specificationClass="Juventud\UI\pages\cuotaSocios\modificar\CuotaSocioModificar" templateLocation="pages/cuotaSocios/modificar/CuotaSocioModificar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+	<param name="cuotaSocioOid" value="get:oid" />
+
+
+	<component id="cuotaSocioForm" type="CuotaSocioForm">
+		<param name="legend" value="msg:cuotaSocio.modificar.legend" />
+		<param name="action" value="linkActionModificarCuotaSocio" />
+		<param name="method" value="str:post" />
+		<param name="backToOnSuccess" value="get:backTo" />
+		<param name="backToOnCancel" value="get:backTo" />
+		<param name="cuotaSocio" value="cuotaSocio" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,52 @@
+<rasty specificationClass="Juventud\UI\components\form\year\YearForm" templateLocation="YearForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="year.oid" />
+	</component>
+
+	
+
+	
+	<component id="nombre" type="InputNumber">
+		<param name="inputId" value="str:nombre" />
+		<param name="name" value="str:nombre" />
+		<param name="value" value="year.nombre" />
+		<param name="requiredMessage" value="msg:year.nombre.required" />
+		<param name="placeholder" value="msg:year.nombre" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="cuotas" type="InputNumber">
+		<param name="inputId" value="str:cuotas" />
+		<param name="name" value="str:cuotas" />
+		<param name="value" value="year.cuotas" />
+		<param name="requiredMessage" value="msg:year.cuotas.required" />
+		<param name="placeholder" value="msg:year.cuotas" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="value" value="year.monto" />
+		<param name="requiredMessage" value="msg:year.monto.required" />
+		<param name="placeholder" value="msg:year.monto" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+</rasty>

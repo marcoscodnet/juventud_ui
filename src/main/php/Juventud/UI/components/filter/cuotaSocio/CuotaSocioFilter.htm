@@ -1,0 +1,153 @@
+<!-- BEGIN:main -->
+<script language="javascript"
+	src="{WEB_PATH}js/autocomplete/simpleAutoComplete.js"></script>
+<link rel="stylesheet"
+	href="{WEB_PATH}css/autocomplete/simpleAutoComplete.css"
+	type="text/css" />
+<script>
+
+
+function submitBuscarCuotaSocios(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarCuotaSocios();
+
+	submitBuscar("{WEB_PATH}", "#cuotaSocios_filter{id}", "#{resultDiv}");
+}
+
+function ordenarCuotaSocios(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscar("{WEB_PATH}", "#cuotaSocios_filter{id}", "#{resultDiv}");
+}
+
+function paginarCuotaSocios(page){
+	$( "#page" ).val(page);
+
+	submitBuscar("{WEB_PATH}", "#cuotaSocios_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarCuotaSocio(event, cuotaSocioId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el cuotaSocio */
+	
+	gotoLink("{linkSeleccionar}?oid="+cuotaSocioId);
+	
+}
+
+function eliminarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscar("{WEB_PATH}", "#cuotaSocios_filter{id}", "#{resultDiv}");
+}
+
+function cambioEstadoCallback(data){
+
+	console.log( data["info"] );
+	submitBuscar("{WEB_PATH}", "#cuotaSocios_filter{id}", "#{resultDiv}");
+}
+
+$(document).ready(function(){
+
+	submitBuscar("{WEB_PATH}", "#cuotaSocios_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+             // función para capturar el enter en el filtro default.
+        	 submitBuscar("{WEB_PATH}", "#cuotaSocios_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+
+<div id="divCuotaSocios{id}Toggle1" style="display:none">
+<form class="cuentas_form">
+		<fieldset>
+		<legend class="search_again" id="legend_buscar{id}_open">{legend_again}</legend>
+		</fieldset>
+</form>		
+</div>
+<div id="divCuotaSocios{id}Toggle2">
+<form class="cuentas_form" id="cuotaSocios_filter{id}">
+
+		<fieldset>
+		
+		<legend id="legend_buscar{id}">{legend}</legend>		
+
+		<div class="row">
+			  <div class="col-5">
+				<div class="item">
+				    <label for="year">{lbl_year}:</label>
+			    	<rasty id="year" />
+			    	
+				</div>
+			</div>
+			<div class="col-1">
+				<div class="item">
+				    <label for="nro">{lbl_nro}:</label>
+			    	<rasty id="nro" />
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="item">
+				    <label for="socio">{lbl_socio}:</label>
+			    	<rasty id="socio" />
+				</div>
+			</div>
+			
+			
+			<div style="clear: both"></div>
+		</div>
+		<div class="row">
+			<div class="col-2">
+				<div class="item">
+				    <label for="pagada">{lbl_pagada}:</label>
+			    	<rasty id="pagada" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="fechaPagoDesde">{lbl_fechaPagoDesde}:</label>
+			    	<rasty id="fechaPagoDesde" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="fechaPagoHasta">{lbl_fechaPagoHasta}:</label>
+			    	<rasty id="fechaPagoHasta" />
+				</div>
+			</div>
+			
+			
+			<div style="clear: both"></div>
+		</div>
+		
+	</fieldset>
+	
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarCuotaSocios">
+	<input type="hidden" name="paginationCallback" value="paginarCuotaSocios">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy" value="{orderBy}">
+	<input type="hidden" id="orderByType" name="orderByType" value="{orderByType}">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+<form  class="cuentas_form" id="buttons{id}">
+	<fieldset class="tblFooters">
+	
+		<button id="input_submit_ajax_CuotaSocio{id}"  type="button"  onclick="javascript: $( '#page' ).val( 1 ); submitBuscar('{WEB_PATH}', '#cuotaSocios_filter{id}', '#{resultDiv}');"><i class="icon-search on-left"></i>{lbl_submit}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

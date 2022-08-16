@@ -1,0 +1,120 @@
+<!-- BEGIN:main -->
+<script>
+
+
+function submitBuscarTipoSocios(){
+
+	$( "#page" ).val( 1 );
+	
+	//buscarTipoSocios();
+
+	submitBuscar("{WEB_PATH}", "#tipoSocios_filter{id}", "#{resultDiv}");
+}
+
+function ordenarTipoSocios(name, type){
+
+	$( "#orderBy" ).val(name);
+	$( "#orderByType" ).val(type);
+	
+	submitBuscar("{WEB_PATH}", "#tipoSocios_filter{id}", "#{resultDiv}");
+}
+
+function paginarTipoSocios(page){
+	$( "#page" ).val(page);
+
+	submitBuscar("{WEB_PATH}", "#tipoSocios_filter{id}", "#{resultDiv}");
+}
+
+function seleccionarTipoSocio(event, tipoSocioId, rowId, checkboxId){
+
+
+	/* muestro un pop con las opciones sobre el tipoSocio */
+	
+	gotoLink("{linkSeleccionar}?oid="+tipoSocioId);
+	
+}
+
+function eliminarCallback(data){
+
+	console.log( data["info"] );
+	submitBuscar("{WEB_PATH}", "#tipoSocios_filter{id}", "#{resultDiv}");
+}
+
+function cambioEstadoCallback(data){
+
+	console.log( data["info"] );
+	submitBuscar("{WEB_PATH}", "#tipoSocios_filter{id}", "#{resultDiv}");
+}
+
+$(document).ready(function(){
+
+	submitBuscar("{WEB_PATH}", "#tipoSocios_filter{id}", "#{resultDiv}");
+
+	 $(".item input").keyup(function (e) {
+         if (e.keyCode == 13) {
+             // función para capturar el enter en el filtro default.
+        	 submitBuscar("{WEB_PATH}", "#tipoSocios_filter{id}", "#{resultDiv}");
+         }
+     });
+	
+});
+
+
+</script>
+
+
+<div id="divTipoSocios{id}Toggle1" style="display:none">
+<form class="cuentas_form">
+		<fieldset>
+		<legend class="search_again" id="legend_buscar{id}_open">{legend_again}</legend>
+		</fieldset>
+</form>		
+</div>
+<div id="divTipoSocios{id}Toggle2">
+<form class="cuentas_form" id="tipoSocios_filter{id}">
+
+		<fieldset>
+		
+		<legend id="legend_buscar{id}">{legend}</legend>		
+
+		<div class="row">
+			  <div class="col-8">
+				<div class="item">
+				    <label for="tipo">{lbl_tipo}:</label>
+			    	<rasty id="tipo" />
+			    	
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="item">
+				    <label for="pagaCuota">{lbl_pagaCuota}:</label>
+			    	<rasty id="pagaCuota" />
+				</div>
+			</div>
+			
+			
+			<div style="clear: both"></div>
+		</div>
+		
+		
+	</fieldset>
+	
+	<input type="hidden" name="model" value="{model}">
+	<input type="hidden" name="filter" value="{filter}">
+	<input type="hidden" name="sortCallback" value="ordenarTipoSocios">
+	<input type="hidden" name="paginationCallback" value="paginarTipoSocios">
+	<input type="hidden" name="selectRowCallback" value="{selectRowCallback}">
+	<input type="hidden" id="orderBy" name="orderBy" value="{orderBy}">
+	<input type="hidden" id="orderByType" name="orderByType" value="{orderByType}">
+	<input type="hidden" id="page" name="page" value="1">
+
+</form>
+<form  class="cuentas_form" id="buttons{id}">
+	<fieldset class="tblFooters">
+	
+		<button id="input_submit_ajax_TipoSocio{id}"  type="button"  onclick="javascript: $( '#page' ).val( 1 ); submitBuscar('{WEB_PATH}', '#tipoSocios_filter{id}', '#{resultDiv}');"><i class="icon-search on-left"></i>{lbl_submit}</button>
+	
+	</fieldset>
+</form>	
+</div>
+<!-- END:main -->

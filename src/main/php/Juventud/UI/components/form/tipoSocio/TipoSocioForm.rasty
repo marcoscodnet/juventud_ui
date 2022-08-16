@@ -1,0 +1,39 @@
+<rasty specificationClass="Juventud\UI\components\form\tipoSocio\TipoSocioForm" templateLocation="TipoSocioForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="tipoSocio.oid" />
+	</component>
+
+	
+
+	
+	<component id="tipo" type="InputText">
+		<param name="inputId" value="str:tipo" />
+		<param name="name" value="str:tipo" />
+		<param name="value" value="tipoSocio.tipo" />
+		<param name="requiredMessage" value="msg:tipoSocio.tipo.required" />
+		<param name="placeholder" value="msg:tipoSocio.tipo" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="pagaCuota" type="InputCheckBox">
+		<param name="inputId" value="str:pagaCuota" />
+		<param name="name" value="str:pagaCuota" />
+		<param name="value"  value="str:pagaCuota" />
+		<param name="isChecked" value="tipoSocio.pagaCuota" />
+	</component>
+	
+	
+	
+</rasty>

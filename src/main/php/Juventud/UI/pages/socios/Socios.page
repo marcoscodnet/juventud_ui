@@ -1,0 +1,13 @@
+<rasty specificationClass="Juventud\UI\pages\socios\Socios" templateLocation="pages/socios/Socios.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+
+	<component id="sociosFilter" type="SocioFilter">
+		<param name="gridModelClazz" value="modelClazz" />
+		<param name="uicriteriaClazz" value="uicriteriaClazz" />
+		<param name="legend" value="msg:socio.buscar" />
+		<param name="legendAgain" value="msg:socio.buscar.again" />
+		<param name="resultDiv" value="str:searchdiv" />
+	</component>
+	
+</rasty>

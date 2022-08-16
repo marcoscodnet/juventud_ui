@@ -1,0 +1,8 @@
+<rasty specificationClass="Juventud\UI\pages\usuarios\roles\RolConsultar" templateLocation="pages/usuarios/roles/RolConsultar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+	<param name="usuarioOid" value="get:oid" />
+
+
+	
+</rasty>

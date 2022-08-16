@@ -1,0 +1,15 @@
+<rasty specificationClass="Juventud\UI\components\filter\tipoSocio\TipoSocioFilter" templateLocation="TipoSocioFilter.htm">
+
+	<component id="tipo" type="InputText">
+		<param name="name" value="str:tipo" />
+		<param name="value" value="criteria.tipo" />
+		<param name="placeholder" value="msg:tipoSocio.tipo" />
+	</component>
+	
+	<component id="pagaCuota" type="InputCombo">
+		<param name="inputId" value="str:pagaCuota" />
+		<param name="name" value="str:pagaCuota" />
+		<param name="options" value="filtrosSINO" />
+	</component>
+	
+</rasty>

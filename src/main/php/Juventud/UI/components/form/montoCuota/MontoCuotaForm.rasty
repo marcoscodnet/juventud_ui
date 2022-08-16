@@ -1,0 +1,50 @@
+<rasty specificationClass="Juventud\UI\components\form\montoCuota\MontoCuotaForm" templateLocation="MontoCuotaForm.htm">
+
+	<param name="error" value="get:error" />
+
+	<component id="backSuccess" type="InputHidden">
+		<param name="inputId" value="str:backToOnSuccess" />
+		<param name="name" value="str:backToOnSuccess" />
+		<param name="value" value="backToOnSuccess" />
+	</component>
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="montoCuota.oid" />
+	</component>
+
+	<component id="nro" type="InputNumber">
+		<param name="inputId" value="str:nro" />
+		<param name="name" value="str:nro" />
+		<param name="value" value="montoCuota.nro" />
+		<param name="requiredMessage" value="msg:montoCuota.nro.required" />
+		<param name="placeholder" value="msg:montoCuota.nro" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	<component id="vencimiento" type="InputDate">
+		<param name="inputId" value="str:vencimiento" />
+		<param name="name" value="str:vencimiento" />
+		<param name="value" value="montoCuota.vencimiento" />
+		<param name="placeholder" value="msg:montoCuota.vencimiento" />
+		<param name="requiredMessage" value="msg:montoCuota.vencimiento.required" />
+		<param name="format" value="str:d/m/Y" />
+	</component>
+	
+	
+	
+	<component id="monto" type="InputCurrency">
+		<param name="inputId" value="str:monto" />
+		<param name="name" value="str:monto" />
+		<param name="value" value="montoCuota.monto" />
+		<param name="requiredMessage" value="msg:montoCuota.monto.required" />
+		<param name="placeholder" value="msg:montoCuota.monto" />
+		<param name="autocomplete" value="str:off" />
+		
+	</component>
+	
+	
+	
+</rasty>

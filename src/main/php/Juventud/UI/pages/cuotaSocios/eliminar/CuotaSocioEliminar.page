@@ -1,0 +1,14 @@
+<rasty specificationClass="Juventud\UI\pages\cuotaSocios\eliminar\CuotaSocioEliminar" templateLocation="pages/cuotaSocios/eliminar/CuotaSocioEliminar.htm">
+
+	<param name="layoutType" value="str:JuventudMetroLayout" />
+	<param name="cuotaSocioOid" value="get:oid" />
+	<param name="error" value="get:error" />
+
+
+	<component id="oid" type="InputHidden">
+		<param name="inputId" value="str:oid" />
+		<param name="name" value="str:oid" />
+		<param name="value" value="cuotaSocio.oid" />
+	</component>
+	
+</rasty>

@@ -1,0 +1,14 @@
+RewriteEngine on
+
+AddDefaultCharset utf-8
+
+RewriteRule ^(.*)\.html$ Juventudapp.php?path=$1&type=1 [L,QSA]
+RewriteRule ^(.*)\.json$ Juventudapp.php?path=$1&type=2 [L,QSA]
+RewriteRule ^(.*)\.pdf$ Juventudapp.php?name=$1&type=3 [L,QSA]
+RewriteRule ^(.*)\.rasty$ Juventudapp.php?name=$1&type=4 [L,QSA]
+RewriteRule ^(.*)\.do$ Juventudapp.php?path=$1&type=5 [L,QSA]
+#RewriteRule ^(.*)$ Juventudapp.php?path=$1 [L,QSA]
+
+
+php_flag apc.cache_by_default Off
+php_flag apc.enabled Off
