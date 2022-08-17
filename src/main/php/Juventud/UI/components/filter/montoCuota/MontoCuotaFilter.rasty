@@ -6,15 +6,16 @@
 		<param name="placeholder" value="msg:montoCuota.nro" />
 	</component>
 	
-	<component id="year" type="InputFindEntity">
-		<param name="inputId" value="str:year" />
-		<param name="name" value="str:year" />
-		<param name="value" value="year.montoCuota" />
-		<param name="placeholder" value="msg:montoCuota.year" />
-		<param name="finder" value="yearFinderClazz" />
-		<param name="hasPopup" value="boolean:true" />
-		<param name="popupFilterType" value="str:YearFilter" />
-		
-	</component>
+
+
+	<component id="year" type="InputCombo">
+            <param name="inputId" value="str:year" />
+            <param name="name" value="str:year" />
+            <param name="value" value="criteria.year" />
+            <param name="options" value="years" />
+            <param name="finder" value="yearFinderClazz" />
+            <param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+
+        </component>
 	
 </rasty>

@@ -4,6 +4,8 @@ namespace Juventud\UI\components\form\cuotaSocio;
 
 
 
+use Juventud\UI\components\filter\model\UISocioCriteria;
+use Juventud\UI\components\filter\model\UIMontoCuotaCriteria;
 use Juventud\UI\utils\JuventudUIUtils;
 
 use Juventud\UI\service\UIServiceFactory;
@@ -138,27 +140,30 @@ class CuotaSocioForm extends Form{
 		}
 		
 	}
-	
-	
 
-	
 
-	
-	public function getSocioFinderClazz(){
-		
-		return get_class( new SocioFinder() );
-		
-	}
-	
-	public function setSocioOid($socioOid){
-		
-		if(!empty($socioOid)){
-			
-			$socio = UIServiceFactory::getUISocioService()->get($socioOid);
-			$this->getCriteria()->setSocio($socio);
-		}
-		
-	}
+    public function getMontoCuotas(){
+
+        $montoCuotas = UIServiceFactory::getUIMontoCuotaService()->getList( new UIMontoCuotaCriteria() );
+
+        return $montoCuotas;
+
+    }
+
+
+    public function getSocios(){
+
+        $socios = UIServiceFactory::getUISocioService()->getList( new UISocioCriteria() );
+
+        return $socios;
+
+    }
+
+    public function getSocioFinderClazz(){
+
+        return get_class( new SocioFinder() );
+
+    }
 	
 
 	

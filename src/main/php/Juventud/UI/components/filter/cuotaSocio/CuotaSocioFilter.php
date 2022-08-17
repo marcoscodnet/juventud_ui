@@ -5,6 +5,9 @@ namespace Juventud\UI\components\filter\cuotaSocio;
 use Juventud\UI\components\filter\model\UICuotaSocioCriteria;
 use Juventud\UI\components\filter\model\UIJuventudCriteria;
 
+use Juventud\UI\components\filter\model\UIYearCriteria;
+use Juventud\UI\components\filter\model\UISocioCriteria;
+
 use Juventud\UI\components\grid\model\CuotaSocioGridModel;
 
 
@@ -69,37 +72,37 @@ class CuotaSocioFilter extends Filter{
 		
 	}
 	
-	public function getYearFinderClazz(){
-		
-		return get_class( new YearFinder() );
-		
-	}
+
+
+    public function getYears(){
+
+        $years = UIServiceFactory::getUIYearService()->getList( new UIYearCriteria() );
+
+        return $years;
+
+    }
+
+    public function getYearFinderClazz(){
+
+        return get_class( new YearFinder() );
+
+    }
+
+    public function getSocios(){
+
+        $socios = UIServiceFactory::getUISocioService()->getList( new UISocioCriteria() );
+
+        return $socios;
+
+    }
+
+    public function getSocioFinderClazz(){
+
+        return get_class( new SocioFinder() );
+
+    }
 	
-	public function setYearOid($yearOid){
-		
-		if(!empty($yearOid)){
-			
-			$year = UIServiceFactory::getUIYearService()->get($yearOid);
-			$this->getCriteria()->setYear($year);
-		}
-		
-	}
-	
-	public function getSocioFinderClazz(){
-		
-		return get_class( new SocioFinder() );
-		
-	}
-	
-	public function setSocioOid($socioOid){
-		
-		if(!empty($socioOid)){
-			
-			$socio = UIServiceFactory::getUISocioService()->get($socioOid);
-			$this->getCriteria()->setSocio($socio);
-		}
-		
-	}
+
 	
 	public function getFiltrosSINO(){
 		

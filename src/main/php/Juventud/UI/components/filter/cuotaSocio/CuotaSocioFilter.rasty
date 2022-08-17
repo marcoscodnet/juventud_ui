@@ -6,34 +6,36 @@
 		<param name="placeholder" value="msg:cuotaSocio.nro" />
 	</component>
 	
-	<component id="year" type="InputFindEntity">
-		<param name="inputId" value="str:year" />
-		<param name="name" value="str:year" />
-		
-		<param name="placeholder" value="msg:cuotaSocio.year" />
-		<param name="finder" value="yearFinderClazz" />
-		<param name="hasPopup" value="boolean:true" />
-		<param name="popupFilterType" value="str:YearFilter" />
-		
-	</component>
+
+
+	<component id="year" type="InputCombo">
+        <param name="inputId" value="str:year" />
+        <param name="name" value="str:year" />
+        <param name="value" value="criteria.year" />
+        <param name="options" value="years" />
+        <param name="finder" value="yearFinderClazz" />
+        <param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+
+    </component>
+
+    <component id="socio" type="InputCombo">
+        <param name="inputId" value="str:socio" />
+        <param name="name" value="str:socio" />
+        <param name="value" value="criteria.socio" />
+        <param name="options" value="socios" />
+        <param name="finder" value="socioFinderClazz" />
+        <param name="emptyOptionLabel" value="msg:criteria.sin_especificar" />
+
+    </component>
 	
-	<component id="socio" type="InputFindEntity">
-		<param name="inputId" value="str:socio" />
-		<param name="name" value="str:socio" />
-		
-		<param name="placeholder" value="msg:cuotaSocio.socio" />
-		<param name="finder" value="socioFinderClazz" />
-		<param name="hasPopup" value="boolean:true" />
-		<param name="popupFilterType" value="str:SocioFilter" />
-		
-	</component>
-	
+
+
 	<component id="pagada" type="InputCombo">
 		<param name="inputId" value="str:pagada" />
 		<param name="name" value="str:pagada" />
 		<param name="options" value="filtrosSINO" />
 	</component>
-	
+
 	<component id="fechaPagoDesde" type="InputDate">
 		<param name="inputId" value="str:fechaPagoDesde" />
 		<param name="name" value="str:fechaPagoDesde" />

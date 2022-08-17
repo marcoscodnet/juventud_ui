@@ -92,6 +92,8 @@ class JuventudMetroLayout extends RastyLayout{
 //		$this->addStyle( "http://fonts.googleapis.com/css?family=Droid+Sans:400,700");
 //		$this->addStyle( "http://fonts.googleapis.com/css?family=Raleway:400,700,600");
 //		$this->addStyle( "http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700");
+
+        $this->addStyle("https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css");
 		
 	}
 	
@@ -189,6 +191,8 @@ class JuventudMetroLayout extends RastyLayout{
 		
 		
 		//$this->addScript("$webPath/js/soft.js");
+
+        $this->addScript("https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js");
 	}
 	
 	protected function initLinks(){

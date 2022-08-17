@@ -5,6 +5,7 @@ namespace Juventud\UI\components\filter\montoCuota;
 use Juventud\UI\components\filter\model\UIMontoCuotaCriteria;
 use Juventud\UI\components\filter\model\UIJuventudCriteria;
 
+use Juventud\UI\components\filter\model\UIYearCriteria;
 use Juventud\UI\components\grid\model\MontoCuotaGridModel;
 
 
@@ -67,16 +68,14 @@ class MontoCuotaFilter extends Filter{
 		return get_class( new YearFinder() );
 		
 	}
-	
-	public function setYearOid($yearOid){
-		
-		if(!empty($yearOid)){
-			
-			$year = UIServiceFactory::getUIYearService()->get($yearOid);
-			$this->getCriteria()->setYear($year);
-		}
-		
-	}
+
+    public function getYears(){
+
+        $years = UIServiceFactory::getUIYearService()->getList( new UIYearCriteria() );
+
+        return $years;
+
+    }
 	
 	public function getYear(){
 		
