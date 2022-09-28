@@ -169,8 +169,29 @@ class UISocioService  implements IEntityGridService{
 			
 		}
 	}
-	
-	
+
+    public function getUltimo( ){
+
+        try{
+
+            $uiCriteria = new UISocioCriteria();
+            $uiCriteria->addOrder("nroSocio", "DESC");
+            $uiCriteria->setRowPerPage(1);
+
+            $criteria = $uiCriteria->buildCoreCriteria() ;
+
+            $service = ServiceFactory::getSocioService();
+
+            $socio = $service->getSingleResult( $criteria );
+
+            return $socio;
+
+        } catch (\Exception $e) {
+
+            throw new RastyException($e->getMessage());
+
+        }
+    }
 	
 }
 ?>

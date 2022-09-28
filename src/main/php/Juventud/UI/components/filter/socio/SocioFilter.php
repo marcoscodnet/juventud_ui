@@ -43,6 +43,7 @@ class SocioFilter extends Filter{
 		$this->addProperty("nombre");
 		$this->addProperty("apellido");
 		$this->addProperty("dni");
+        $this->addProperty("nroSocio");
 		$this->addProperty("email");
 		$this->addProperty("tipoSocio");
 		
@@ -54,7 +55,7 @@ class SocioFilter extends Filter{
 		//$this->fillInput("nombre", $this->getInitialText() );
 		
 		parent::parseXTemplate($xtpl);
-		
+        $xtpl->assign("lbl_nroSocio",  $this->localize("criteria.nroSocio") );
 		$xtpl->assign("lbl_nombre",  $this->localize("criteria.nombre") );
 		$xtpl->assign("lbl_apellido",  $this->localize("criteria.apellido") );
 		$xtpl->assign("lbl_dni",  $this->localize("criteria.dni") );

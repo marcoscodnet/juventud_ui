@@ -15,6 +15,11 @@
 		<param name="value" value="criteria.dni" />
 		<param name="placeholder" value="msg:socio.dni" />
 	</component>
+	<component id="nroSocio" type="InputText">
+    		<param name="name" value="str:nroSocio" />
+    		<param name="value" value="criteria.nroSocio" />
+    		<param name="placeholder" value="msg:socio.nroSocio" />
+    	</component>
 	<component id="email" type="InputText">
 		<param name="name" value="str:email" />
 		<param name="value" value="criteria.email" />

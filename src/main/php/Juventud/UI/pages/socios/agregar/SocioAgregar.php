@@ -37,6 +37,11 @@ class SocioAgregar extends JuventudPage{
 		
 		$tipoSocio = UIServiceFactory::getUITipoSocioService()->get(JuventudConfig::CD_TIPO_SOCIO_ACTIVO);
 		$socio->setTipoSocio($tipoSocio);
+
+        $ultimoSocio = UIServiceFactory::getUISocioService()->getUltimo();
+
+
+        $socio->setNroSocio($ultimoSocio->getNroSocio()+1);
 		
 		$this->setSocio($socio);
 		
