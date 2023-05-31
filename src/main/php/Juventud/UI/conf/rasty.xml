@@ -28,6 +28,8 @@
 	<page name="CuotaSocioAgregar"   location="pages/cuotaSocios/agregar/CuotaSocioAgregar.page" url="cuotaSocios/agregar"/>
 	<page name="CuotaSocioModificar"   location="pages/cuotaSocios/modificar/CuotaSocioModificar.page" url="cuotaSocios/modificar"/>
 	<page name="CuotaSocioEliminar"   location="pages/cuotaSocios/eliminar/CuotaSocioEliminar.page" url="cuotaSocios/eliminar"/>
+
+	<page name="SociosXLS"   location="pages/socios/SociosXLS.page" url="socios/sociosxls"/>
 	
 	<!-- declaración de los componentes -->
 	
@@ -51,7 +53,10 @@
 	<component name="SocioFilter"   location="components/filter/socio"/>
 	<component name="CuotaSocioFilter"   location="components/filter/cuotaSocio"/>
 	<!-- boxes -->
-	
+
+	<!-- xlss -->
+	<component name="SociosXLS"   location="components/xls/socio"/>
+
 	<!-- pdfs -->
 
 	<!-- layouts -->
@@ -60,6 +65,7 @@
 	<component name="JuventudErrorLayout" location="layouts" />
 	<component name="RastySecurityLayout" location="layouts" />
 	<component name="RastySecurityPublicLayout" location="layouts" />
+	<component name="JuventudXLSLayout" location="layouts" />
 	
 	<!-- declaración de las actions -->
 	<action name="Login" class="Juventud\UI\actions\login\Login" url="login"/>

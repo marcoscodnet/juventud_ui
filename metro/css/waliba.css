@@ -1782,4 +1782,14 @@ producto_valorpromo{
 
 }
 
+.metro .icon-pdf:before {
+    /*content: "";*/
+    content: url("../../css/images/pdf_32.png");
+    color: red;
+}
 
+.metro .icon-xls:before {
+    /*content: "";*/
+    content: url("../../css/images/xls_32.png");
+    color: red;
+}

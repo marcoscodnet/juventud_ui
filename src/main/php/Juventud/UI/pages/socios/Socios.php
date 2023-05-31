@@ -73,10 +73,18 @@ class Socios extends JuventudPage{
 	
 	protected function parseXTemplate(XTemplate $xtpl){
 
-		$xtpl->assign("legend_operaciones", $this->localize("grid.operaciones") );
+
+
+        $xtpl->assign("legend_operaciones", $this->localize("grid.operaciones") );
 		$xtpl->assign("legend_resultados", $this->localize("grid.resultados") );
-		
+
+
 		$xtpl->assign("agregar_label", $this->localize("socio.agregar") );
+
+        $xtpl->assign("lbl_pdf", $this->localize("socios.title") );
+        $xtpl->assign("linkXls", $this->getLinkSociosXls() );
+        $xtpl->parse("main.opciones.add");
+        $xtpl->parse("main.opciones");
 	}
 
 }

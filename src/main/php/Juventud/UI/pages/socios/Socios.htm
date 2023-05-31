@@ -1,5 +1,11 @@
 <!-- BEGIN: main-->
 <script>
+	function listarSociosXLS(  ){
+		$("#input_submit_ajax_Socio").click();
+		window.location.href='{linkXls}'
+
+
+	}
 </script>
 <style>
 </style>
@@ -11,7 +17,20 @@
         <rasty id="sociosFilter" />
         
     </div>
+	<!-- BEGIN: opciones -->
+	<div class="grid_filters_actions">
+		<fieldset>
 
+			<!-- BEGIN: add -->
+
+
+			<button class="shortcut" onclick="listarSociosXLS()">
+				<i class="icon-xls"></i>{lbl_pdf}
+			</button>
+			<!-- END: add -->
+		</fieldset>
+	</div>
+	<!-- END: opciones -->
 	<br class="clear">
 
 	<fieldset>

@@ -180,6 +180,12 @@ abstract class JuventudPage extends RastyPage{
 		
 	}
 
+    public function getLinkSociosXls(){
+
+        return LinkBuilder::getPageUrl( "SociosXLS") ;
+
+    }
+
 
 }
 ?>

@@ -1,0 +1,12 @@
+<rasty specificationClass="Juventud\UI\pages\socios\SociosXLS" templateLocation="pages/socios/SociosXLS.htm">
+
+	<param name="layoutType" value="str:JuventudXLSLayout" />
+
+
+	
+
+	 <component id="sociosXLS" type="SociosXLS">
+		
+	</component> 
+	
+</rasty>
