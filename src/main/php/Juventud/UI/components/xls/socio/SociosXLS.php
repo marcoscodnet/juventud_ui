@@ -69,7 +69,7 @@ class SociosXLS extends RastyComponent
 		$xtpl->assign("APP_PATH", RastyConfig::getInstance()->getAppPath());
 		$xtpl->assign("fecha", JuventudUIUtils::formatDateTimeToView(new Datetime()));
 
-
+		$xtpl->assign("lbl_detalle_nroSocio", $this->localize("socio.nroSocio"));
 		$xtpl->assign("lbl_detalle_nombre", $this->localize("socio.nombre"));
 		$xtpl->assign("lbl_detalle_apellido", $this->localize("socio.apellido"));
 		$xtpl->assign("lbl_detalle_dni", $this->localize("socio.dni"));
@@ -81,13 +81,13 @@ class SociosXLS extends RastyComponent
 
 
 		
-		$socioCriteria->addOrder('apellido', 'ASC');
+		$socioCriteria->addOrder('nroSocio', 'ASC');
 
 		$socios = UIServiceFactory::getUISocioService()->getList($socioCriteria);
 
 		foreach ($socios as $socio) {
 
-
+			$xtpl->assign("nroSocio", $socio->getNroSocio());
 			$xtpl->assign("nombre", $socio->getNombre());
 			$xtpl->assign("apellido", $socio->getApellido());
 			$xtpl->assign("dni", $socio->getDni());
