@@ -62,6 +62,7 @@ class SocioForm extends Form{
 		$this->addProperty("telefono");
 		$this->addProperty("direccion");
 		$this->addProperty("pagaDesde");
+        $this->addProperty("nroSocio");
 		
 		$this->setBackToOnSuccess("Socios");
 		$this->setBackToOnCancel("Socios");
@@ -96,7 +97,8 @@ class SocioForm extends Form{
 		
 		$xtpl->assign("cancel", $this->getLinkCancel() );
 		$xtpl->assign("lbl_cancel", $this->localize( $this->getLabelCancel() ) );
-		
+
+        $xtpl->assign("lbl_nroSocio", $this->localize("socio.nroSocio") );
 		$xtpl->assign("lbl_nombre", $this->localize("socio.nombre") );
 		$xtpl->assign("lbl_apellido", $this->localize("socio.apellido") );
 		$xtpl->assign("lbl_dni", $this->localize("socio.dni") );

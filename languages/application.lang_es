@@ -610,6 +610,7 @@
     "criteria.apellido": "Apellido",
     "criteria.dni": "D.N.I.",
     "criteria.tipoSocio": "Tipo de socio",
+    "criteria.nroSocio": "Nro. ",
     "criteria.email": "E-mail",
     
     
@@ -617,6 +618,7 @@
     "socio.buscar": "Buscar socio",
     
     "socio.oid": "Identificador",
+    "socio.nroSocio": "Nro",
     "socio.tipoSocio": "Tipo de socio",
     "socio.pagaDesde": "Abona cuota desde",
     "socio.nombre": "Nombre",

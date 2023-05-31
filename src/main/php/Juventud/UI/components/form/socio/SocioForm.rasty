@@ -35,13 +35,23 @@
 		<param name="autocomplete" value="str:off" />
 		
 	</component>
-	
+
 	<component id="dni" type="InputNumber">
-		<param name="inputId" value="str:dni" />
-		<param name="name" value="str:dni" />
-		<param name="value" value="socio.dni" />
-		<param name="requiredMessage" value="msg:socio.dni.required" />
-		<param name="placeholder" value="msg:socio.dni" />
+    		<param name="inputId" value="str:dni" />
+    		<param name="name" value="str:dni" />
+    		<param name="value" value="socio.dni" />
+
+    		<param name="placeholder" value="msg:socio.dni" />
+    		<param name="autocomplete" value="str:off" />
+
+    	</component>
+
+	<component id="nroSocio" type="InputNumber">
+		<param name="inputId" value="str:nroSocio" />
+		<param name="name" value="str:nroSocio" />
+		<param name="value" value="socio.nroSocio" />
+		<param name="requiredMessage" value="msg:socio.nroSocio.required" />
+		<param name="placeholder" value="msg:socio.nroSocio" />
 		<param name="autocomplete" value="str:off" />
 		
 	</component>
@@ -53,7 +63,7 @@
 		<param name="placeholder" value="msg:socio.email" />
 		<param name="checkEmail" value="str:1" />
 		<param name="invalidEmailMessage" value="msg:socio.email.invalid" />
-		<param name="requiredMessage" value="msg:socio.email.required" />
+
 		
 	</component>
 	

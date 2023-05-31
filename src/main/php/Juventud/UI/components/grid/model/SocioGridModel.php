@@ -52,6 +52,9 @@ class SocioGridModel extends EntityGridModel{
 		
 		$column = GridModelBuilder::buildColumn( "oid", "socio.oid", 20, EntityGrid::TEXT_ALIGN_RIGHT );
 		$this->addColumn( $column );
+
+        $column = GridModelBuilder::buildColumn( "nroSocio", "socio.nroSocio", 10, EntityGrid::TEXT_ALIGN_CENTER ) ;
+        $this->addColumn( $column );
 		
 		$column = GridModelBuilder::buildColumn( "nombre", "socio.nombre", 40, EntityGrid::TEXT_ALIGN_LEFT ) ;
 		$this->addColumn( $column );

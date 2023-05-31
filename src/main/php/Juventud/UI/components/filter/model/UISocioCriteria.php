@@ -31,6 +31,24 @@ class UISocioCriteria extends UIJuventudCriteria{
 	private $email;
 	
     private $tipoSocio;
+
+    private $nroSocio;
+
+    /**
+     * @return mixed
+     */
+    public function getNroSocio()
+    {
+        return $this->nroSocio;
+    }
+
+    /**
+     * @param mixed $nroSocio
+     */
+    public function setNroSocio($nroSocio)
+    {
+        $this->nroSocio = $nroSocio;
+    }
 	
 	
 		
@@ -55,7 +73,7 @@ class UISocioCriteria extends UIJuventudCriteria{
 		$criteria->setDni( $this->getDni() );
 		$criteria->setEmail( $this->getEmail() );
 		$criteria->setTipoSocio( $this->getTipoSocio() );
-		
+        $criteria->setNroSocio( $this->getNroSocio() );
 		
 		return $criteria;
 	}
